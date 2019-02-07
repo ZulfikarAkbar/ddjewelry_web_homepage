@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>D & D | Home</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    h2 {
+      color: #000;
+      font-size: 26px;
+      font-weight: 300;
+      position: relative;
+      margin: 0 0 50px 0;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+    h2::after {
+      content: "";
+      width: 50%;
+      position: absolute;
+      height: 4px;
+      border-radius: 1px;
+      background: #ff5555;
+      left: 0;
+      bottom: -20px;
+    }
+    .carousel {
+      margin: 50px auto;
+    }
+    .carousel .item {
+      color: #999;
+      overflow: hidden;
+        min-height: 120px;
+      font-size: 13px;
+    }
+    .carousel .media {
+      position: relative;
+      padding: 0 0 0 20px;
+      margin-left: 20px;
+    }
+    .carousel .media img {
+      width: 75px;
+      height: 75px;
+      display: block;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        border: 2px solid #fff;
+    }
+    .carousel .testimonial {
+        color: #fff;
+        position: relative;    
+        background: #9b9b9b;
+      padding: 15px;
+      margin: 0 0 20px 20px;
+    }
+    .carousel .testimonial::before, .carousel .testimonial::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+    }
+    .carousel .testimonial::before {
+        width: 20px;
+        height: 20px;
+      background: #9b9b9b;
+      box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
+    }
+    .carousel .testimonial::after {
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+        border-left-color: #fff;
+    }
+    .carousel .item .row > div:first-child .testimonial {
+      margin: 0 20px 20px 0;
+    }
+    .carousel .item .row > div:first-child .media {
+      margin-left: 0;
+    }
+    .carousel .testimonial p {
+      text-indent: 40px;
+        line-height: 21px;
+      margin: 0;
+    }
+    .carousel .testimonial p::before {
+      content: '\94';
+        color: #fff;
+        font-weight: bold;
+        font-size: 68px;
+        line-height: 70px;
+        position: absolute;
+        left: -25px;
+        top: 0;
+    }
+    .carousel .overview {
+      padding: 3px 0 0 15px;
+    }
+    .carousel .overview .details {
+      padding: 5px 0 8px;
+    }
+    .carousel .overview b {
+      text-transform: uppercase;
+      color: #ff5555;
+    }
+    .carousel .carousel-control {
+      width: 30px;
+      height: 30px;
+        background: #666;
+        text-shadow: none;
+      top: 4px;
+    }
+    .carousel-control i {
+      font-size: 16px;
+    }
+    .carousel-control.left {
+      left: auto;
+      right: 40px;
+    }
+    .carousel-control.right {
+      left: auto;
+    }
+    .carousel-indicators {
+      bottom: -80px;
+    }
+    .carousel-indicators li, .carousel-indicators li.active {
+      width: 18px;
+        height: 18px;
+      border-radius: 0;
+      margin: 1px 4px;
+    }
+    .carousel-indicators li {	
+        background: #e2e2e2;
+        border: 4px solid #fff;
+    }
+    .carousel-indicators li.active {
+      color: #fff;
+        background: #ff5555;    
+        border: 5px double;    
+    }
+    .star-rating li {
+      padding: 0 2px;
+    }
+    .star-rating i {
+      font-size: 14px;
+      color: #ffdc12;
+    }
+</style>
+
+<body>
+
+  <header>
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" style="background-color: crimson">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">D&D</a>
+  
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li> -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Categories</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#" style="color: crimson">Necklaces</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Bracelets</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Earrings</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Rings</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Pendants</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Watches</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Fragrances</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Wedding bands</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Gifts</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Pearl jewelry</a>
+          <a class="dropdown-item" href="#" style="color: crimson">Men's jewelry</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Collections</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#" style="color: crimson">D&D paper flower</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D HardWare</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D 1837</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D victoria</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D celebration rings</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D keys</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D soleste</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D diamond</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D pearl</a>
+            <a class="dropdown-item" href="#" style="color: crimson">D&D metro</a>
+          </div>
+        </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Designers</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#" style="color: crimson">D&D.co</a>
+            <a class="dropdown-item" href="#" style="color: crimson">Celleste Picasso</a>
+            <a class="dropdown-item" href="#" style="color: crimson">Mei Wulandari</a>
+          </div>
+        </li>
+
+      <!-- Dropdown -->
+      
+
+    </ul>
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-user"></i> Login</a></li>
+      <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-user-plus"></i> Register</a></li>
+    </ul>
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" placeholder="What are you looking for?" aria-label="Search">
+    </form>
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+  <!-- /Start your project here-->
+<!-- Jumbotron -->
+<div class="jumbotron text-center" style="background-color: lightyellow">
+
+  <img src="img/dd.JPG" alt="" width="100%" height="100%">
+  <p style="font-size: 20px;color: crimson">
+    <strong>
+      Enjoy your day at D&D. Discover your new love, we have bright colors, 
+      bold looks, and more!
+    </strong>
+  </p>
+
+  <hr class="my-4">
+  
+
+  <div class="pt-2">
+    <button type="button" class="btn waves-effect" style="background-color: crimson">See all new <span class="fa fa-diamond ml-1"></span></button>
+    <button type="button" class="btn waves-effect" style="background-color: crimson">Top rated <span class="fa fa-diamond ml-1"></span></button>
+    <br><br><br>
+    <div class="row">
+      <div class="col-lg-4">
+        <h3><i class="fa fa-check" style="color: crimson"></i><span>Secure</span></h3>
+        <h5>
+          <p>
+            We use best technology to make your always safe
+          </p>
+        </h5>
+      </div>
+      <div class="col-lg-4">
+        <h3><i class="fa fa-check" style="color: crimson"></i><span>Unique</span></h3>
+        <h5>
+          <p>
+            We have many items you need
+          </p>
+        </h5>
+      </div>
+      <div class="col-lg-4">
+        <h3><i class="fa fa-check" style="color: crimson"></i><span>Independent</span></h3>
+        <h5>
+          <p>
+            We put heart and soul to make special product
+          </p>
+        </h5>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+<!-- Jumbotron -->
+  </header>
+ 
+<br>
+<hr class="my-4">
+<br>
+<div class="container">
+  <h2 style="text-align: center"><strong>Popular right now</strong></h2>
+  <br>
+  <div class="row">
+    <div class="col-lg-3">
+      <!-- Card -->
+      <div class="card">
+
+        <!-- Card image -->
+        <img class="card-img-top" src="img/neck_0318.jpg" width="100%" height="100%" alt="Card image cap">
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title"><a>Blue saphire</a></h4>
+          <!-- Text -->
+          <p class="card-text">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            (1000)
+            <strong>IDR300.000,00</strong>
+          </p>
+          <!-- Button -->
+          <a href="#">Buy it now</a>
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <br>
+    <div class="col-lg-3">
+      <!-- Card -->
+      <div class="card">
+
+        <!-- Card image -->
+        <img class="card-img-top" src="img/610vFnOcW4L._UY395_.jpg" width="100%" height="100%" alt="Card image cap">
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title"><a>Gold chain</a></h4>
+          <!-- Text -->
+          <p class="card-text">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            (900)
+            <strong>IDR300.000,00</strong>
+          </p>
+          <!-- Button -->
+          <a href="#">Buy it now</a>
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <div class="col-lg-3">
+      <!-- Card -->
+      <div class="card">
+
+        <!-- Card image -->
+        <img class="card-img-top" src="img/51XwUygIBCL._SY300_QL70_.jpg" width="100%" height="100%" alt="Card image cap">
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title"><a>Snow diamond</a></h4>
+          <!-- Text -->
+          <p class="card-text">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            (950)
+            <strong>IDR350.000,00</strong>
+          </p>
+          <!-- Button -->
+          <a href="#">Buy it now</a>
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <div class="col-lg-3">
+      <!-- Card -->
+      <div class="card">
+
+        <!-- Card image -->
+        <img class="card-img-top" src="img/20180503_MC_Jewelry_Tile2_2x2Promo_US_tiffany_hardwear_link_bracelet_v3.jpg" width="100%" height="100%" alt="Card image cap">
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title"><a>Gold ball earrings</a></h4>
+          <!-- Text -->
+          <p class="card-text">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            (910)
+            <strong>IDR270.000,00</strong>
+          </p>
+          <!-- Button -->
+          <a href="#">Buy it now</a>
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+  </div>
+</div>
+<br>
+<hr class="my-4">
+<br>
+
+<div class="container">
+  <h2><strong>Categories</strong></h2>
+  <div class="row">
+    <div class="col-xl-8">
+      <h3><strong>Rings</strong></h3>
+      <p>
+        We have specialization to make gorgeous rings match to your
+        finger and that's will be great experience for you.
+      </p>
+      <a href="">See all product</a>
+    </div>
+    <div class="col-xl-4">
+      <img src="img/categories/rings.jpg" alt="" width="100%" height="100%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-4">
+      <img src="img/categories/bands.jpg" alt="" width="100%" height="100%">
+    </div>
+    <div class="col-xl-8">
+      <h3><strong>Wedding bands</strong></h3>
+      <p>
+        Wedding is the great moment of our life. We will make 
+        that's come true with our special product
+      </p>
+      <a href="">See all product</a>
+    </div>
+  </div>
+  <a href="" style="font-size: 20px"><strong>See all categories</strong></a>
+</div>
+
+<br>
+<hr class="my-4">
+<br>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12">			
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <h2>Recent <b>Testimonials</b></h2>
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>   
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+            <div class="item carousel-item active">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="testimonial">
+                    <p>What a special piece! I'm very happy.</p>
+                  </div>
+                  <div class="media">
+                    <div class="media-left d-flex mr-3">
+                      <img src="img/download.jpg" alt="">										
+                    </div>
+                    <div class="media-body">
+                      <div class="overview">
+                        <div class="name"><b>Paula Wilson</b></div>
+                        <div class="details">Media Analyst / SkyNet</div>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </div>										
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="testimonial">
+                    <p>Wow, I visit this site and I get whatever I need here, thanks!</p>
+                  </div>
+                  <div class="media">
+                    <div class="media-left d-flex mr-3">
+                      <img src="img/1544827560_selena-gomez.jpg" alt="">
+                    </div>
+                    <div class="media-body">
+                      <div class="overview">
+                        <div class="name"><b>Selena Gomez</b></div>
+                        <div class="details">Public figure</div>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </div>										
+                    </div>
+                  </div>
+                </div>
+              </div>			
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="testimonial">
+                    <p>For long day my cousin bring me this site, now I like princess! thanks.</p>
+                  </div>
+                  <div class="media">
+                    <div class="media-left d-flex mr-3">
+                      <img src="img/0.jpg" alt="">										
+                    </div>
+                    <div class="media-body">
+                      <div class="overview">
+                        <div class="name"><b>Michelle Houston</b></div>
+                        <div class="details">Web Developer / DevCorp</div>											
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </div>										
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="testimonial">
+                    <p>what a great site, i am very happy</p>
+                  </div>
+                  <div class="media">
+                    <div class="media-left d-flex mr-3">
+                      <img src="img/WS_CohereOne_MichelleH.jpg" alt="">										
+                    </div>
+                    <div class="media-body">
+                      <div class="overview">
+                        <div class="name"><b>Mary Saveley</b></div>
+                        <div class="details">Graphic Designer / MarsMedia</div>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                      </div>										
+                    </div>
+                  </div>
+                </div>
+              </div>			
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="testimonial">
+                    <p>So nice, thanks!</p>
+                  </div>
+                  <div class="media">
+                    <div class="media-left d-flex mr-3">
+                      <img src="/examples/images/clients/5.jpg" alt="">										
+                    </div>
+                    <div class="media-body">
+                      <div class="overview">
+                        <div class="name"><b>Kim Kadarshian</b></div>
+                        <div class="details">Actress</div>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </div>										
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="testimonial">
+                    <p>Very happy !</p>
+                  </div>
+                  <div class="media">
+                    <div class="media-left d-flex mr-3">
+                      <img src="/examples/images/clients/6.jpg" alt="">										
+                    </div>
+                    <div class="media-body">
+                      <div class="overview">
+                        <div class="name"><b>Jane Adams</b></div>
+                        <div class="details">Web Designer / UniqueDesign</div>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </div>										
+                    </div>
+                  </div>
+                </div>
+              </div>			
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+          </a>
+          <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <hr class="my-4">
+  <br>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-8"><img src="img/categories/gifts.png" alt="" width="100%" height="100%"></div>
+        <div class="col-lg-4"><h3><strong>Gifts</strong></h3><p>We can help you to find special gift for your special person.</p>
+          <a href="">See more</a>
+        </div>
+    </div>
+    
+    
+  </div>
+  <br>
+  <hr class="my-4">
+  <br>
+
+  <div class="container">
+    <div class="col-12"><img src="img/promo3.jpg" alt="" width="100%" height="100%"></div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-3"><img src="img/amazon.png" alt="" width="100%" height="100%"></div>
+      <div class="col-3"><img src="img/visa.gif" alt="" width="100%" height="100%"></div>
+      <div class="col-3"><img src="img/mastercard.jpg" alt="" width="100%" height="100%"></div>
+      <div class="col-3"><img src="img/cirrus_logo_28498.jpg" alt="" width="100%" height="100%"></div>
+    </div>
+  </div>
+
+  <br><br>
+  
+  <!-- Footer -->
+<footer class="page-footer font-small ">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: crimson">About</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" style="color: black">Privacy policy</a>
+            </li>
+            <li>
+              <a href="#!" style="color: black">Terms & conditions</a>
+            </li>
+            <li>
+              <a href="#!" style="color: black">Careers</a>
+            </li>
+            <li>
+              <a href="#!" style="color: black">Sitemap</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: crimson">Customer service</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" style="color: black"><i class="fa fa-map-marker"></i> Jakarta, Indonesia</a>
+            </li>
+            <li>
+              <a href="#!" style="color: black"><i class="fa fa-phone"></i> 800 000 000</a>
+            </li>
+            <li>
+              <a href="#!" style="color: black"><i class="fa fa-envelope"></i> support@d&d.co</a>
+            </li>
+            <li>
+              <a href="#!" style="color: black"><i class="fa fa-comments"></i> FAQ</a>
+            </li>
+            <li>
+              <a href="#!" style="color: black">Shipping & returns</a>
+            </li>
+            <li>
+              <a href="#!" style="color: black">Product care</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: crimson">Subscribe us</h5>
+
+          <input type="text" placeholder="Enter your email">
+          <button>Subscribe</button>
+          <br><br>
+          <a href="" class="btn" style="background-color: crimson"><i class="fa fa-mobile-phone"></i><span> Download our Apps</span></a>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto" style="color: black">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: crimson"><strong>Follow</strong> us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" style="font-size: 20px;"><i class="fa fa-instagram" style="color: crimson"> <span style="color: black"> Instagram</span></i></a>
+            </li>
+            <li>
+              <a href="#!" style="font-size: 20px;"><i class="fa fa-facebook" style="color: crimson"> <span style="color: black"> Facebook</span></i></a>
+            </li>
+            <li>
+              <a href="#!" style="font-size: 20px;"><i class="fa fa-twitter" style="color: crimson"> <span style="color: black"> Twitter</span></i></a>
+            </li>
+            <li></li>
+              <a href="#!" style="font-size: 20px;"><i class="fa fa-pinterest" style="color: crimson"> <span style="color: black"> Pinterest</span></i></a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    
+   
+    <!-- Footer Links -->
+    <br><br>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="color: crimson;background-color: white">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/" style="color: crimson"> D&D Co</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
